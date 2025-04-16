@@ -88,7 +88,7 @@ for t in trendler:
         haberekle(id, h['title'], h['url'], h['resim'], h['kaynak'])
 
 
-c.execute("SELECT trend,title,kaynak,tarih FROM haberler ORDER BY rowid DESC LIMIT 100")
+c.execute("SELECT trend,title,kaynak,tarih FROM haberler ORDER BY rowid DESC LIMIT")
 sonuc=c.fetchall()
 
 st.dataframe(sonuc)
